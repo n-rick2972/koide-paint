@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/page.css" />
+  </head>
+  <body>
+    <section class="contact">
+      <h2 class="section-title">
+        お問い合わせ
+        <span>contact</span>
+      </h2>
+      <p>
+        ご不明な点等ございましたら、お気軽にお問い合わせください。<br /><span
+          class="inline-red"
+          >※必須</span
+        >の項目は必ず入力してください。
+      </p>
+      <form action="" class="form">
+        <div class="form__table-warapper">
+          <table class="form-table">
+            <tbody>
+              <tr>
+                <th>
+                  <label for="name"
+                    >お名前<br class="pc" /><span class="inline-red"
+                      >※必須</span
+                    ></label
+                  >
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="お名前"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="mail"
+                    >メールアドレス<br class="pc" /><span class="inline-red"
+                      >※必須</span
+                    ></label
+                  >
+                </th>
+                <td>
+                  <input
+                    type="email"
+                    name="mail"
+                    placeholder="info@example.com"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="tel"
+                    >電話番号<br class="pc" /><span class="inline-red"
+                      >※必須</span
+                    ></label
+                  >
+                </th>
+                <td>
+                  <input
+                    type="tel"
+                    name="tel"
+                    pattern="[\d\-]*"
+                    placeholder="0000-000-000"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="textarea"
+                    >お問い合わせ内容<br class="pc" /><span class="inline-red"
+                      >※必須</span
+                    ></label
+                  >
+                </th>
+                <td>
+                  <textarea
+                    name="textarea"
+                    cols="30"
+                    rows="10"
+                    placeholder="お問い合わせ内容を入力ください。"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th class="check" colspan="2">
+                  <input
+                    type="checkbox"
+                    id="check"
+                    name="check"
+                    value="1"
+                    required
+                  />
+                  <div class="label">
+                    <label for="check"
+                      >確認画面は表示されません。上記内容にて送信しますので、よろしければチェックを入れてください。</label
+                    >
+                  </div>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <input type="submit" value="この内容で送信する" class="detail-btn" />
+      </form>
+    </section>
+  </body>
+</html>
