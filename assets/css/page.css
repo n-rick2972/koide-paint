@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.bg-wrapper {
+  background-color: #fafafa;
+}
+
 /* repaint */
 .repaint01,
 .repaint02 {
