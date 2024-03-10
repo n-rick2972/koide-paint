@@ -102,6 +102,7 @@
   border: 1px solid #353f66;
   white-space: nowrap;
   padding: 10px;
+  background-color: #fafafa;
 }
 
 .price-table th,
