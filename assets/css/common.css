@@ -360,14 +360,13 @@ footer::before {
 
 .footer-box {
   justify-content: space-between;
-  gap: 50px;
   background-color: #353f66;
-  padding: 30px 0;
+  padding: 50px 0 10px;
 }
 
 .footer-left {
   width: 220px;
-  margin: 2.5%;
+  margin: 0 0 0 2.5%;
 }
 
 .footer-left img {
@@ -382,13 +381,35 @@ footer::before {
 
 .footer-menu {
   justify-content: flex-start;
-  gap: 10px;
-  flex: 1;
+  gap: 30px;
+  width: 65%;
   margin-right: 2.5%;
 }
 
 .footer-menu a {
   color: #fff;
+}
+
+.copy {
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.policy,
+.copyright {
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.policy {
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.copyright {
+  font-weight: 300;
 }
 
 @media (max-width: 420px) {
@@ -400,7 +421,7 @@ footer::before {
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
-    padding: 30px 2.5% 100px;
+    padding: 30px 2.5% 10px;
   }
 
   .footer-left {
@@ -421,5 +442,15 @@ footer::before {
 
   .footer-menu li {
     width: 45%;
+  }
+
+  .copy {
+    margin-top: 80px;
+    text-align: left;
+  }
+
+  .policy,
+  .copyright {
+    font-size: 1rem;
   }
 }
