@@ -618,7 +618,7 @@ p {
   transform: translateX(-100%);
   width: 90px;
   height: 150px;
-  background-image: url(../img/charactor.png);
+  background-image: url(../img/character.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -660,7 +660,7 @@ p {
   transform: translate(100%, -50%);
   width: 120px;
   height: 200px;
-  background-image: url(../img/charactor.png);
+  background-image: url(../img/character.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
