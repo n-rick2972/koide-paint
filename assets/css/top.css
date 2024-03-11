@@ -199,12 +199,12 @@ p {
     url(../img/plan__bg-repeat.jpg);
   background-repeat: no-repeat, repeat-y;
   background-position: center top, center 20%;
-  background-size: contain;
+  background-size: contain, 100%;
   padding: 100px 0 160px;
 }
 
 .plan .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .plan-contents {
