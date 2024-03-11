@@ -11,25 +11,33 @@ p {
   line-height: 1.8em;
 }
 
+@media (max-width: 420px) {
+  p {
+    font-size: 1.4rem;
+    line-height: 1.3em;
+  }
+}
+
 /* mainvisual */
 .mainvisual {
-  background-image: url(../img/mainvisual-img.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80vh;
   height: 80dvh;
-  min-height: 500px;
-  position: relative;
+  min-height: 750px;
+  background-image: url(../img/mainvisual-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-text {
-  position: absolute;
-  top: 10vh;
   width: 100%;
   align-items: flex-start;
   gap: 100px;
+  margin-top: -5%;
 }
 
 .main-text div {
@@ -45,6 +53,7 @@ p {
   background-blend-mode: color-burn;
   font-family: "Noto Serif JP", serif;
   text-align: center;
+  font-weight: 800;
 }
 
 .main-text > div span:first-child {
@@ -68,6 +77,35 @@ p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-blend-mode: color-burn;
+}
+
+@media (max-width: 420px) {
+  .mainvisual {
+    min-height: 500px;
+  }
+
+  .main-text div {
+    line-height: 1;
+  }
+  .main-text {
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    margin-top: -10%;
+  }
+
+  .main-text > div span:first-child {
+    font-size: 10rem;
+  }
+
+  .main-text > div span:nth-of-type(2) {
+    font-size: 3rem;
+  }
+
+  .main-text h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
 }
 
 /* 小出塗装の信頼を形づくる3つのこだわり */
@@ -122,6 +160,63 @@ p {
 
 .future__list-item figure {
   width: 50%;
+}
+
+@media (max-width: 420px) {
+  .future {
+    margin-bottom: 80px;
+  }
+
+  .future .section-title {
+    margin-bottom: 30px;
+  }
+
+  .future .section-title span {
+    transform: translate(-10%, -170%) rotate(-10deg);
+  }
+
+  .future__list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .future__list-item {
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .future__list-item figure {
+    width: 100%;
+  }
+
+  .future__list-item:nth-child(1) figure img,
+  .future__list-item:nth-child(3) figure img {
+    padding-right: 5%;
+  }
+
+  .future__list-item:nth-child(2) figure img {
+    padding-left: 5%;
+  }
+
+  .future__list-item .textarea {
+    padding: 0 5%;
+  }
+
+  .future__list-item .textarea h3 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+  .future__list-item .textarea h3 span {
+    transform: translate(0, -120%) rotate(-10deg);
+  }
+
+  .future__list-item .textarea p {
+    font-size: 1.6rem;
+  }
+
+  .future__list-item .textarea p:not(:last-child) {
+    margin-bottom: 1em;
+  }
 }
 
 /* 塗り替えでマイホームをながく快適に*/
@@ -181,16 +276,80 @@ p {
   left: 190px;
 }
 
-.text-area {
+.repaint-content .text-area {
   width: 45%;
 }
 
-.text-area p:not(:last-of-type) {
+.repaint-content .text-area p:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
-.repaint .text-area .detail-btn {
+.repaint-content .text-area .detail-btn {
   margin: 50px 0 0 auto;
+}
+
+@media (max-width: 420px) {
+  .repaint {
+    margin-bottom: 80px;
+  }
+
+  .repaint::before {
+    display: none;
+  }
+
+  .repaint .section-title span {
+    transform: translate(0, -120%) rotate(-10deg);
+  }
+
+  .repaint-content {
+    gap: 0;
+    width: 100%;
+    margin-top: -20px;
+    flex-direction: column;
+  }
+
+  .repaint-content .photo-area {
+    height: 350px;
+    width: 100%;
+  }
+
+  .repaint-content .photo-area img:first-child {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .repaint-content .photo-area img:nth-last-of-type(2) {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 160px;
+    left: 200px;
+  }
+
+  .repaint-content .photo-area img:nth-of-type(3) {
+    width: 80px;
+    height: 140px;
+    object-fit: cover;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+  }
+
+  .repaint-content .text-area {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .repaint-content .text-area p {
+    font-size: 1.4rem;
+  }
+  .repaint .text-area .detail-btn {
+    margin: 50px auto 0;
+    font-size: 1.4rem;
+  }
 }
 
 /* 外壁塗装をしたいあなたにおすすめのパック*/
@@ -235,6 +394,33 @@ p {
 
 .plan-contents-textarea .detail-btn {
   margin-top: 50px;
+}
+
+@media (max-width: 420px) {
+  .plan {
+    padding: 80px 0;
+  }
+
+  .plan .section-title {
+    margin-bottom: 50px;
+  }
+
+  .plan-contents {
+    flex-direction: column-reverse;
+  }
+
+  .plan-contents img {
+    width: 100%;
+    padding-right: 10%;
+  }
+
+  .plan-contents-textarea {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .plan-contents-textarea .detail-btn {
+    margin: 50px auto 0;
+  }
 }
 
 /* 施行の流れ */
@@ -421,7 +607,7 @@ p {
 
 @media (max-width: 420px) {
   .flow {
-    margin: 120px auto 50px;
+    margin: 80px auto 50px;
   }
 
   .flow__list-wrapper {
@@ -535,7 +721,7 @@ p {
   font-weight: 400;
 }
 
-.photo-area {
+.works-list-item .photo-area {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
@@ -581,6 +767,27 @@ p {
   font-size: 2.4rem;
 }
 
+@media (max-width: 420px) {
+  .contact {
+    margin: 80px auto 100px;
+  }
+
+  .contact .section-title {
+    margin-bottom: 50px;
+  }
+  .contact .section-title span {
+    transform: translate(0, -100%) rotate(-10deg);
+  }
+
+  .contact-link {
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+}
+
 /* 私たちと一緒に働きませんか？ */
 .recruit {
   position: relative;
@@ -599,7 +806,7 @@ p {
 
 .recruit .section-title {
   color: #fff;
-  margin: 0 0 50px 0;
+  margin-bottom: 50px;
   text-shadow: rgba(0, 0, 0, 0.251) 0px 4px 4px;
 }
 
@@ -637,11 +844,34 @@ p {
   padding-bottom: 50px;
 }
 
+@media (max-width: 420px) {
+  .recruit {
+    margin-bottom: 80px;
+    padding: 80px 0;
+  }
+
+  .recruit .section-title span {
+    transform: translate(100%, -100%) rotate(-10deg);
+  }
+
+  .recruit .section-title::before {
+    display: none;
+  }
+
+  .recruit-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .recruit-content .detail-btn {
+    margin: 0 auto;
+  }
+}
+
 /* 小出塗装map */
 .about {
   width: 50%;
   max-width: 720px;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -691,17 +921,17 @@ p {
 .map {
   width: 100%;
   aspect-ratio: 5/3;
-  border-radius: 20px;
   margin: 20px 0;
 }
 
 .map iframe {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .contact-box {
-  width: 300px;
+  width: 320px;
   color: #ecc64a;
   margin: 30px auto;
 }
@@ -709,38 +939,41 @@ p {
 .contact-box img {
   width: 50px;
   height: 50px;
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 10px;
 }
 
 .contact-box > p:first-of-type {
   font-size: 3.2rem;
+  font-weight: 700;
   margin-left: 10px;
 }
 
 .contact-time {
   width: 100%;
+  padding-right: 10px;
   font-size: 1.6rem;
   color: #333;
   text-align: right;
 }
 
 .area {
-  margin: 30px 0 50px;
-  border: 1px solid #333;
+  margin: 30px auto 50px;
+  padding: 30px;
+  border: 3px solid #353f66;
   border-radius: 20px;
 }
 
 .area h4 {
-  font-size: 2.1rem;
-  padding: 20px 0;
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 .area p {
+  width: fit-content;
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin: 0 auto;
   text-align: left;
-  padding: 0 50px 20px;
 }
 
 .sns {
@@ -772,4 +1005,68 @@ p {
   width: 65px;
   height: 65px;
   object-fit: cover;
+}
+
+@media (max-width: 420px) {
+  .about {
+    width: 95%;
+  }
+
+  .name h2 {
+    font-size: 1.6rem;
+  }
+
+  .name h3 {
+    font-size: 4rem;
+  }
+
+  .kana {
+    font-size: 1.8rem;
+  }
+
+  .name::after {
+    width: 80px;
+    height: 140px;
+    right: 20px;
+  }
+
+  .address > p {
+    margin: 60px auto 10px;
+  }
+
+  .contact-box img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-time {
+    padding-right: 25px;
+    font-size: 1.4rem;
+  }
+  .area {
+    margin: 50px auto;
+    padding: 20px 30px;
+  }
+
+  .area h4 {
+    font-size: 1.8rem;
+  }
+
+  .area p {
+    font-size: 1.6rem;
+  }
+
+  .sns {
+    gap: 50px;
+  }
+
+  .sns p {
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .sns p::after {
+    right: -33px;
+  }
 }

@@ -19,9 +19,8 @@ body {
   min-width: 1000px; /* 420px~1000pxでは横スクロールが出る対応です。　*/
   color: #212121;
   background-image: url(../img/body_bg.jpg);
-  background-repeat: repeat-y;
   background-position: center center;
-  background-size: 100% auto;
+  background-size: contain;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -94,6 +93,8 @@ img {
   body {
     min-width: auto;
     font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    line-height: normal;
   }
 
   h2 {
@@ -190,20 +191,17 @@ img {
 
 @media (max-width: 420px) {
   .detail-btn {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .detail-btn::after {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
 }
 
 /* header */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -213,31 +211,140 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
+  box-shadow: 6px 0 12px rgba(51, 51, 51, 0.5);
   z-index: 9999;
 }
 
+.header-wrapper {
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .logo {
-  margin-left: 16px;
+  width: 20%;
+  max-width: 280px;
+  height: 100%;
 }
 
 .logo img {
-  width: 280px;
-  height: 80px;
+  width: 100%;
+}
+
+.header-menu-wrapper {
+  background-image: url(../img/body_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .header-menu {
-  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.hamburger {
+  display: none;
 }
 
-.header-menu li {
-  padding-right: 30px;
-  font-weight: bold;
+@media (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-menu-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-120%);
+    width: 100%;
+    height: calc(100dvh - 80px);
+    padding: 20px 0 0;
+    transition: transform 0.5s linear;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .header-menu-wrapper.open {
+    transform: translateY(80px);
+  }
+
+  .header-menu li {
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .hamburger {
+    position: relative;
+    width: 35px;
+    height: 30px;
+  }
+
+  .hamburger span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 3px;
+    background-color: #212121;
+    transition: all 0.5s linear;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 13px;
+  }
+
+  .hamburger span:nth-child(3) {
+    width: 25px;
+    top: 26px;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    height: 50px;
+  }
+
+  .header-wrapper {
+    width: 95%;
+  }
+
+  .logo {
+    width: 45%;
+  }
+
+  .header-menu-wrapper {
+    height: calc(100dvh - 50px);
+  }
+
+  .header-menu-wrapper.open {
+    transform: translateY(50px);
+  }
 }
 
 /* footer */
 footer {
   position: relative;
+  margin-top: 80px;
 }
 
 footer::before {
@@ -252,32 +359,67 @@ footer::before {
 }
 
 .footer-box {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 50px;
   background-color: #353f66;
   padding: 30px 0;
 }
 
+.footer-left {
+  width: 220px;
+  margin: 2.5%;
+}
+
 .footer-left img {
-  width: 300px;
-  margin: 30px 80px 10px;
+  padding-bottom: 10px;
 }
 
 .footer-left p {
+  font-size: 1.6rem;
+  line-height: normal;
   color: #fff;
-  margin-left: 80px;
-  font-size: 1.5rem;
 }
 
 .footer-menu {
-  display: flex;
-}
-
-.footer-menu li {
-  padding-right: 40px;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 1;
+  margin-right: 2.5%;
 }
 
 .footer-menu a {
   color: #fff;
+}
+
+@media (max-width: 420px) {
+  footer::before {
+    height: 50px;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 30px 2.5% 100px;
+  }
+
+  .footer-left {
+    width: 200px;
+    margin: 0;
+  }
+
+  .footer-left p {
+    font-size: 1.4rem;
+  }
+
+  .footer-menu {
+    justify-content: space-between;
+    gap: 20px 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-menu li {
+    width: 45%;
+  }
 }

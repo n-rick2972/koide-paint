@@ -10,9 +10,9 @@ $(function () {
     autoplaySpeed: 0,
     responsive: [
       {
-        breakpoint: 375,
+        breakpoint: 420,
         settings: {
-          centerPadding: "50px",
+          centerPadding: "70px",
           slidesToShow: 1,
         },
       },

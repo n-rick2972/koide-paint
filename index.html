@@ -23,23 +23,30 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="logo">
-        <img src="assets/img/logo.svg" alt="株式会社 小出塗装" />
-      </h1>
-      <nav>
-        <ul class="header-menu">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./about.html">会社案内</a></li>
-          <li><a href="./plan.html">施工プラン</a></li>
-          <li><a href="./works.html">施工実績</a></li>
-          <li><a href="./repaint.html">塗り替え時期</a></li>
-          <li><a href="./flow.html">施工の流れ</a></li>
-          <li><a href="./salesarea.html">営業エリア</a></li>
-          <li><a href="./faq.html">Q&A</a></li>
-          <li><a href="./contact.html">お問い合わせ</a></li>
-        </ul>
-      </nav>
+    <header class="flex">
+      <div class="flex header-wrapper">
+        <h1 class="logo">
+          <img src="assets/img/logo.svg" alt="株式会社 小出塗装" />
+        </h1>
+        <nav class="header-menu-wrapper">
+          <ul class="flex header-menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">会社案内</a></li>
+            <li><a href="./plan.html">施工プラン</a></li>
+            <li><a href="./works.html">施工実績</a></li>
+            <li><a href="./repaint.html">塗り替え時期</a></li>
+            <li><a href="./flow.html">施工の流れ</a></li>
+            <li><a href="./salesarea.html">営業エリア</a></li>
+            <li><a href="./faq.html">Q&A</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -253,9 +260,6 @@
                 </figure>
                 <div class="flex cat-area">
                   <p class="works-cat">外壁塗装</p>
-                  <p class="works-cat">セラミックウレタン塗装</p>
-                  <p class="works-cat">外壁塗装</p>
-                  <p class="works-cat">セラミックウレタン塗装</p>
                 </div>
               </div>
               <h3><span>東海市</span><span>M様邸</span></h3>
@@ -268,7 +272,6 @@
               </figure>
               <div class="flex cat-area">
                 <p class="works-cat">外壁塗装</p>
-                <p class="works-cat">プレミアム無機塗料</p>
               </div>
             </div>
             <h3><span>東海市</span><span>K様邸</span></h3>
@@ -319,12 +322,12 @@
           </li>
         </ul>
 
-        <a href="./works.html" class="detail-btn">詳しく見る</a>
+        <a href="./works.html" class="detail-btn">実績をもっと見る</a>
       </section>
 
       <section class="wrapper contact">
         <h2 class="section-title">
-          お見積もりは無料で行っています！
+          お見積もりは<br class="mobile" />無料で行っています！
           <span>Contact us!!</span>
         </h2>
         <a href="./contact.html" class="flex contact-link"
@@ -381,7 +384,7 @@
           <div class="area">
             <h4>対応エリア</h4>
             <p>
-              愛知県東海市を中心に知多半島地域、西三河地域 <br />
+              愛知県東海市を中心に知多半島地域、西三河地域<br class="pc" />
               名古屋市南部地域など
             </p>
           </div>
@@ -400,24 +403,22 @@
     </main>
 
     <footer>
-      <div class="footer-box">
+      <div class="flex footer-box">
         <div class="footer-left">
           <img src="assets/img/footer-logo.jpg" alt="" />
-          <p>〒476-0015 愛知県東海市東海町3-2-17</p>
+          <p>〒476-0015<br />愛知県東海市東海町3-2-17</p>
         </div>
-        <div class="footer-right">
-          <ul class="footer-menu">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./about.html">会社案内</a></li>
-            <li><a href="./plan.html">施工プラン</a></li>
-            <li><a href="./works.html">施工実績</a></li>
-            <li><a href="./repaint.html">塗り替え時期</a></li>
-            <li><a href="./flow.html">施工の流れ</a></li>
-            <li><a href="./salesarea.html">営業エリア</a></li>
-            <li><a href="./faq.html">Q&A</a></li>
-            <li><a href="./contact.html">お問い合わせ</a></li>
-          </ul>
-        </div>
+        <ul class="flex footer-menu">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">会社案内</a></li>
+          <li><a href="./plan.html">施工プラン</a></li>
+          <li><a href="./works.html">施工実績</a></li>
+          <li><a href="./repaint.html">塗り替え時期</a></li>
+          <li><a href="./flow.html">施工の流れ</a></li>
+          <li><a href="./salesarea.html">営業エリア</a></li>
+          <li><a href="./faq.html">Q&A</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
       </div>
     </footer>
 
@@ -431,5 +432,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./assets/js/slick-option.js"></script>
+    <script src="./assets/js/hamburger.js"></script>
   </body>
 </html>
