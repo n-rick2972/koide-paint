@@ -33,7 +33,7 @@ header {
   transform: translate(100%, -50%);
   width: 120px;
   height: 200px;
-  background-image: url(../img/charactor.png);
+  background-image: url(../img/character.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -334,12 +334,15 @@ header {
 .contact-us .section-title {
   margin-bottom: 80px;
 }
+.contact-us .section-title span {
+  color: #fafafa;
+}
 
 .contact-link {
   height: 150px;
   background-color: #353f66;
   border-radius: 20px;
-  color: #fff;
+  color: #fafafa;
   font-size: 2.4rem;
 }
 
@@ -365,7 +368,7 @@ header {
   transform: translate(100%, -50%);
   width: 120px;
   height: 200px;
-  background-image: url(../img.item1/charactor2.png);
+  background-image: url(../img/character.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -396,13 +399,13 @@ header {
 .map {
   width: 100%;
   aspect-ratio: 5/3;
-  border-radius: 20px;
   margin: 20px 0;
 }
 
 .map iframe {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .contact-box {
@@ -477,6 +480,413 @@ header {
   width: 65px;
   height: 65px;
   object-fit: cover;
+}
+
+/* 外壁塗装まるごとパック */
+.pack {
+  gap: 30px;
+  margin: 200px auto 160px;
+}
+
+.pack-left {
+  width: 45%;
+}
+
+.pack-left .section-title {
+  margin: 0;
+}
+
+.pack-right {
+  flex: 1;
+}
+
+.pack-right img {
+  width: 100%;
+}
+
+.pack h3 {
+  color: #dc4a4a;
+  font-size: 2rem;
+  margin: 30px 0 20px;
+}
+
+.pack-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pack-title {
+  background-color: #323f69;
+  color: #fff;
+  text-align: center;
+  font-size: 2.1rem;
+  padding: 5px 10px;
+}
+
+.pack-menu {
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #d9d9d9;
+  padding: 15px 30px;
+}
+
+.pack-menu p {
+  background-color: #ecc64a;
+  display: inline-block;
+  padding: 2px 15px;
+}
+
+/* 用途別おすすめ塗料 */
+.paint {
+  margin-bottom: 160px;
+}
+
+.paint .section-title {
+  margin-bottom: 50px;
+}
+
+.paint__list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.paint__list-item {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  border: 2px solid #323f69;
+}
+
+.paint__detail {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.paint__detail h3 {
+  padding-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.paint__price-area {
+  gap: 20px 10px;
+  width: 32%;
+  background-color: #353f66;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.paint__price-area .price-left p {
+  font-weight: 500;
+}
+
+.paint__price-area .price-left p:first-of-type {
+  font-size: 1.8rem;
+}
+
+.paint__price-area .price-left p:nth-of-type(2) {
+  font-size: 1.2rem;
+}
+
+.price-value {
+  display: inline-block;
+  position: relative;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price-value::after {
+  content: "(税抜)";
+  font-size: 1.4rem;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+.price-value span {
+  font-size: 2.4rem;
+}
+
+.paint-btn {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: normal;
+  color: #323f69;
+}
+
+.paint-btn.size-small {
+  font-size: 1.4rem;
+}
+
+/* 外壁塗料紹介 */
+.outer .section-title {
+  margin-bottom: 50px;
+}
+
+.outer__list-item h3 {
+  display: block;
+  padding: 8px 0;
+  background-color: #ecc64a;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.outer__list-item__contents {
+  align-items: stretch;
+  gap: 30px;
+  width: 80%;
+  margin: 30px auto 40px;
+}
+
+.outer__list-item__contents figure {
+  width: 20%;
+}
+
+.outer__list-item__textarea {
+  flex: 1;
+  position: relative;
+}
+
+.outer__list-item__textarea .comment {
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.type {
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.type li {
+  padding: 8px 20px;
+  background-color: #86d0d3;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.inner-list li {
+  margin-bottom: 5px;
+}
+
+.inner-list li p:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.inner-list li p:first-child::before {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #212121;
+}
+
+.outer-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  height: auto;
+  padding: 15px 30px;
+  background-color: #323f69;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+
+.outer-btn::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid #fafafa;
+  border-right: 1.5px solid #fafafa;
+  margin-left: 10px;
+}
+
+/* 屋根塗装紹介 */
+.roof-paint {
+  background-color: #353f66;
+  padding: 100px 0;
+  margin-bottom: 80px;
+}
+
+.roof-paint .section-title {
+  margin-bottom: 50px;
+  color: #fafafa;
+}
+
+.roof-paint .section-title span {
+  color: #fafafa;
+}
+
+.roof-paint__list-item h3 {
+  display: block;
+  padding: 8px 0;
+  background-color: #ecc64a;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.roof-paint__list-item__contents {
+  align-items: stretch;
+  gap: 30px;
+  width: 80%;
+  margin: 30px auto 40px;
+}
+
+.roof-paint__list-item__contents figure {
+  width: 20%;
+}
+
+.roof-paint__list-item__textarea {
+  flex: 1;
+  position: relative;
+}
+
+.roof-paint__list-item__textarea .type {
+  margin-bottom: 10px;
+}
+
+.roof-paint__list-item__textarea .comment {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.roof-paint__list-item__textarea .inner-list li {
+  margin-bottom: 5px;
+}
+
+.roof-paint__list-item__textarea .inner-list li p {
+  color: #fafafa;
+}
+
+.roof-paint__list-item__textarea .inner-list li p:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.roof-paint__list-item__textarea .inner-list li p:first-child::before {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #fafafa;
+}
+
+.roof-paint-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  height: auto;
+  padding: 15px 30px;
+  background-color: #fafafa;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 500;
+  color: #323f69;
+}
+
+.roof-paint-btn::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid #323f69;
+  border-right: 1.5px solid #323f69;
+  margin-left: 10px;
+}
+
+/* まるごと価格の算出方法 */
+.calculation {
+  background-color: #fafafa;
+  margin-bottom: 160px;
+  padding: 100px 0;
+}
+
+.calculation .section-title {
+  margin-bottom: 50px;
+}
+
+.step {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.step__list-item {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgba(236, 198, 74, 0.5);
+}
+
+.step__list-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.step__list-item h3 {
+  padding-bottom: 30px;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.step__list-item:first-child p:nth-of-type(2) {
+  padding-bottom: 15px;
+}
+
+/* 坪単価一覧 */
+.cost {
+  width: 50%;
+  margin: 0 auto 80px;
+}
+
+.cost .section-title {
+  margin-bottom: 50px;
+}
+
+.cost-table {
+  width: 100%;
+}
+
+.cost-table th,
+.cost-table td {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #353f66;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.cost-table th {
+  background-color: #353f66;
+  color: #fafafa;
+}
+
+.caption {
+  margin: 10px 0 0;
+}
+
+.caption p:not(:last-child) {
+  padding-bottom: 1em;
 }
 
 /* repaint */
