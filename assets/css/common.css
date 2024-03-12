@@ -383,7 +383,7 @@ footer::before {
   justify-content: flex-start;
   gap: 30px;
   width: 65%;
-  margin-right: 2.5%;
+  margin: 0 2.5% 0 50px;
 }
 
 .footer-menu a {
