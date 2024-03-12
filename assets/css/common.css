@@ -382,7 +382,7 @@ footer::before {
 .footer-menu {
   justify-content: flex-start;
   gap: 30px;
-  width: 65%;
+  flex: 1;
   margin: 0 2.5% 0 50px;
 }
 
