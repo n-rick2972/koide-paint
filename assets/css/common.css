@@ -21,6 +21,7 @@ body {
   background-image: url(../img/body_bg.jpg);
   background-position: center center;
   background-size: contain;
+  background-repeat: repeat;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
