@@ -114,7 +114,7 @@ img {
   }
 
   .wrapper {
-    width: 95%;
+    width: 90%;
     min-width: 320px;
   }
 
@@ -329,7 +329,7 @@ header {
   }
 
   .logo {
-    width: 45%;
+    width: 160px;
   }
 
   .header-menu-wrapper {

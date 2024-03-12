@@ -10,34 +10,44 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="logo">
-        <img src="./assets/img/logo.svg" alt="株式会社 小出塗装" />
-      </h1>
-      <nav>
-        <ul class="header-menu">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./about.html">会社案内</a></li>
-          <li><a href="./plan.html">施工プラン</a></li>
-          <li><a href="./works.html">施工実績</a></li>
-          <li><a href="./repaint.html">塗り替え時期</a></li>
-          <li><a href="./flow.html">施工の流れ</a></li>
-          <li><a href="./salesarea.html">営業エリア</a></li>
-          <li><a href="./faq.html">Q&A</a></li>
-          <li><a href="./contact.html">お問い合わせ</a></li>
-        </ul>
-      </nav>
+    <header class="flex">
+      <div class="flex header-wrapper">
+        <h1 class="logo">
+          <img src="assets/img/logo.svg" alt="株式会社 小出塗装" />
+        </h1>
+        <nav class="header-menu-wrapper">
+          <ul class="flex header-menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">会社案内</a></li>
+            <li><a href="./plan.html">施工プラン</a></li>
+            <li><a href="./works.html">施工実績</a></li>
+            <li><a href="./repaint.html">塗り替え時期</a></li>
+            <li><a href="./flow.html">施工の流れ</a></li>
+            <li><a href="./salesarea.html">営業エリア</a></li>
+            <li><a href="./faq.html">Q&A</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="message">
+        <figure class="message-photo mobile">
+          <img src="assets/img/section1-img2.jpg" alt="代表取締役・小出 靖晃" />
+        </figure>
         <h2 class="section-title">
           会社案内
           <span>Our works</span>
         </h2>
 
         <div class="flex message-content">
-          <figure class="message-photo">
+          <figure class="message-photo pc">
             <img
               src="assets/img/section1-img2.jpg"
               alt="代表取締役・小出 靖晃"
@@ -69,12 +79,12 @@
         </div>
       </section>
 
-      <section>
+      <section class="wrapper section__logo">
         <h2 class="section-title">
           ロゴに込めた想い
           <span>Logo's concept</span>
         </h2>
-        <div class="wrapper flex logo-box">
+        <div class="flex logo-box">
           <div class="logo-text">
             <p>
               ロゴマークを作成するにあたり、お客様との信頼関係を築き、末永くお付き合いができるようにとclientの「C」とコイデ「コ」ががっちりと重なり合っていることを意味するロゴマークは思いを込め作成しました。<br />
@@ -131,7 +141,10 @@
           <tbody>
             <tr>
               <th>会社名</th>
-              <td>株式会社 小出塗装（旧社名 有限会社小出塗装店）</td>
+              <td>
+                株式会社 小出塗装<br class="mobile" />（旧社名
+                有限会社小出塗装店）
+              </td>
             </tr>
             <tr>
               <th>代表取締役</th>
@@ -139,7 +152,7 @@
             </tr>
             <tr>
               <th>所在地</th>
-              <td>〒476-0015 愛知県東海市東海3-2-17</td>
+              <td>〒476-0015 <br class="mobile" />愛知県東海市東海3-2-17</td>
             </tr>
             <tr>
               <th>電話番号</th>
@@ -259,23 +272,30 @@
     </main>
 
     <footer>
-      <div class="footer-box">
+      <div class="flex footer-box">
         <div class="footer-left">
           <img src="assets/img/footer-logo.jpg" alt="" />
-          <p>〒476-0015 愛知県東海市東海町3-2-17</p>
+          <p>〒476-0015<br />愛知県東海市東海町3-2-17</p>
         </div>
-        <div class="footer-right">
-          <ul class="footer-menu">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./about.html">会社案内</a></li>
-            <li><a href="./plan.html">施工プラン</a></li>
-            <li><a href="./works.html">施工実績</a></li>
-            <li><a href="./repaint.html">塗り替え時期</a></li>
-            <li><a href="./flow.html">施工の流れ</a></li>
-            <li><a href="./salesarea.html">営業エリア</a></li>
-            <li><a href="./faq.html">Q&A</a></li>
-            <li><a href="./contact.html">お問い合わせ</a></li>
-          </ul>
+        <ul class="flex footer-menu">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">会社案内</a></li>
+          <li><a href="./plan.html">施工プラン</a></li>
+          <li><a href="./works.html">施工実績</a></li>
+          <li><a href="./repaint.html">塗り替え時期</a></li>
+          <li><a href="./flow.html">施工の流れ</a></li>
+          <li><a href="./salesarea.html">営業エリア</a></li>
+          <li><a href="./faq.html">Q&A</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
+        <div class="copy">
+          <a href="" class="policy">プライバシーポリシー</a>
+          <small class="copyright"
+            >Copyright © 株式会社小出塗装 All Rights Reserved.<br
+              class="mobile"
+            />
+            【掲載の記事・写真・イラストなどの無断複写・転載を禁じます】</small
+          >
         </div>
       </div>
     </footer>

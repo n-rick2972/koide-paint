@@ -11,23 +11,30 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="logo">
-        <img src="assets/img/logo.svg" alt="株式会社 小出塗装" />
-      </h1>
-      <nav>
-        <ul class="header-menu">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./about.html">会社案内</a></li>
-          <li><a href="./plan.html">施工プラン</a></li>
-          <li><a href="./works.html">施工実績</a></li>
-          <li><a href="./repaint.html">塗り替え時期</a></li>
-          <li><a href="./flow.html">施工の流れ</a></li>
-          <li><a href="./salesarea.html">営業エリア</a></li>
-          <li><a href="./faq.html">Q&A</a></li>
-          <li><a href="./contact.html">お問い合わせ</a></li>
-        </ul>
-      </nav>
+    <header class="flex">
+      <div class="flex header-wrapper">
+        <h1 class="logo">
+          <img src="assets/img/logo.svg" alt="株式会社 小出塗装" />
+        </h1>
+        <nav class="header-menu-wrapper">
+          <ul class="flex header-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">会社案内</a></li>
+            <li><a href="plan.html">施工プラン</a></li>
+            <li><a href="works.html">施工実績</a></li>
+            <li><a href="repaint.html">塗り替え時期</a></li>
+            <li><a href="flow.html">施工の流れ</a></li>
+            <li><a href="salesarea.html">営業エリア</a></li>
+            <li><a href="faq.html">Q&A</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -41,8 +48,13 @@
           <p>
             まるごと価格には、足場仮設・ネット・養生・高圧洗浄・外壁塗装（下地・中塗り・上塗りの計3回塗り）・軒天・破風・鼻隠し・幕板・雨樋・雨戸・ジョイント部コーキングのひび割れ補修・工事諸経費や近隣へのご挨拶まで全て含みます！
           </p>
+          <figure class="mobile">
+            <img src="./assets/img/pack_home.png" alt="" />
+          </figure>
           <div class="pack-box">
-            <p class="pack-title">全て込みで余分な費用は一切必要ありません！</p>
+            <p class="pack-title">
+              全て込みで<br class="mobile" />余分な費用は一切必要ありません！
+            </p>
             <div class="flex pack-menu">
               <p>足場仮設</p>
               <p>ネット</p>
@@ -62,7 +74,7 @@
             </div>
           </div>
         </div>
-        <figure class="pack-right">
+        <figure class="pack-right pc">
           <img src="./assets/img/pack_home.png" alt="" />
         </figure>
       </section>
@@ -92,7 +104,7 @@
           </li>
           <li class="flex paint__list-item">
             <div class="paint__detail">
-              <h3>セラミックシリコン塗料またはUVクリヤー塗料</h3>
+              <h3><span>セラミックシリコン塗料</span>またはUVクリヤー塗料</h3>
               <p>
                 現在主流となっている塗料で、超低汚染性・超耐久性を持つ塗料です。<br />
                 防かび・防藻性もあり自浄作用により、汚れを雨水が落としてくれます。<br />
@@ -112,7 +124,7 @@
           </li>
           <li class="flex paint__list-item">
             <div class="paint__detail">
-              <h3>超低汚染外壁用遮熱塗料 リファイン</h3>
+              <h3><span>超低汚染外壁用遮熱塗料 </span>リファイン</h3>
               <p>
                 無機成分配合により、フッ素塗料同等の強い耐候性を持った外壁用の遮熱塗料です。<br />
                 さらに優れた超低汚染性を持続することで、長期間にわたり遮熱効果を保持し、生活環境を快適にします。<br />
@@ -130,7 +142,7 @@
           </li>
           <li class="flex paint__list-item">
             <div class="paint__detail">
-              <h3>フッ素樹脂塗料またはUVフッ素クリヤー塗料</h3>
+              <h3><span>フッ素樹脂塗料</span>またはUVフッ素クリヤー塗料</h3>
               <p>
                 シリコン系と比べ更に耐久性があがり紫外線にも強く変色や退色にも強くなっており、汚れもつきにくくなっています。<br />
                 好評のクリヤー塗料にもフッ素仕様が登場しました！<br />
@@ -150,8 +162,10 @@
           <li class="flex paint__list-item">
             <div class="paint__detail">
               <h3>
-                プレミアム無機塗料<br />
-                またはハイブリッド無機クリヤー塗料
+                <span
+                  >プレミアム無機塗料<br class="pc" />
+                  または</span
+                >ハイブリッド無機クリヤー塗料
               </h3>
               <p>
                 フッ素樹脂塗料を超える超高耐候性を持つプレミアムな無機塗料です。<br />
@@ -199,7 +213,7 @@
         </h2>
         <ul class="outer__list">
           <li class="outer__list-item">
-            <h3>【エスケー化研】クリーンマイルドシリーズ</h3>
+            <h3><span>【エスケー化研】</span>クリーンマイルドシリーズ</h3>
             <div class="flex outer__list-item__contents">
               <figure>
                 <img
@@ -236,7 +250,9 @@
             </div>
           </li>
           <li class="outer__list-item">
-            <h3>【日本ペイント】ピュアライド UVプロテクトクリヤー</h3>
+            <h3>
+              <span>【日本ペイント】ピュアライド</span> UVプロテクトクリヤー
+            </h3>
             <div class="flex outer__list-item__contents">
               <figure>
                 <img
@@ -273,7 +289,9 @@
             </div>
           </li>
           <li class="outer__list-item">
-            <h3>【【アステックペイント】超低汚染リファイン1000Si-IR</h3>
+            <h3>
+              <span>【アステックペイント】</span>超低汚染リファイン1000Si-IR
+            </h3>
             <div class="flex outer__list-item__contents">
               <figure>
                 <img
@@ -307,7 +325,7 @@
             </div>
           </li>
           <li class="outer__list-item">
-            <h3>【水谷ペイント】ナノコンポジットW</h3>
+            <h3><span>【水谷ペイント】</span>ナノコンポジットW</h3>
             <div class="flex outer__list-item__contents">
               <figure>
                 <img
@@ -341,7 +359,7 @@
             </div>
           </li>
           <li class="outer__list-item">
-            <h3>【日進産業】遮熱・断熱塗料ガイナ</h3>
+            <h3><span>【日進産業】</span>遮熱・断熱塗料ガイナ</h3>
             <div class="flex outer__list-item__contents">
               <figure>
                 <img
@@ -383,13 +401,13 @@
 
       <section class="roof-paint">
         <h2 class="section-title">
-          屋根塗装紹介
           <span>Roof paint</span>
+          屋根塗装紹介
         </h2>
 
         <ul class="roof-paint__list">
           <li class="roof-paint__list-item">
-            <h3>【エスケー化研】屋根フレッシュシリーズ</h3>
+            <h3><span>【エスケー化研】</span>屋根フレッシュシリーズ</h3>
             <div class="flex roof-paint__list-item__contents">
               <figure>
                 <img
@@ -481,13 +499,21 @@
         <ol class="step">
           <li class="step__list-item">
             <h3>Step1</h3>
-            <p>延べ床面積（㎡）を坪数に計算しなおします。</p>
-            <p>延べ床面積（㎡）÷3.3=延べ床の坪数となります。</p>
-            <p>例）延べ床99㎡の場合、99㎡÷3.3=30坪となります</p>
+            <p>
+              延べ床面積（㎡）を坪数に計算しなおします。<br class="pc" />
+              延べ床面積（㎡）÷3.3=延べ床の坪数<br class="mobile" />となります。
+            </p>
+            <p>
+              例）延べ床99㎡の場合、<br class="mobile" />99㎡÷3.3=30坪となります
+            </p>
           </li>
           <li class="step__list-item">
             <h3>Step2</h3>
-            <p>坪数×ご希望の塗料の坪単価＋税＝まるごと価格となります。</p>
+            <p>
+              坪数×ご希望の塗料の坪単価＋税<br
+                class="mobile"
+              />=まるごと価格となります。
+            </p>
           </li>
         </ol>
       </section>
@@ -560,23 +586,30 @@
     </main>
 
     <footer>
-      <div class="footer-box">
+      <div class="flex footer-box">
         <div class="footer-left">
           <img src="assets/img/footer-logo.jpg" alt="" />
-          <p>〒476-0015 愛知県東海市東海町3-2-17</p>
+          <p>〒476-0015<br />愛知県東海市東海町3-2-17</p>
         </div>
-        <div class="footer-right">
-          <ul class="footer-menu">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./about.html">会社案内</a></li>
-            <li><a href="./plan.html">施工プラン</a></li>
-            <li><a href="./works.html">施工実績</a></li>
-            <li><a href="./repaint.html">塗り替え時期</a></li>
-            <li><a href="./flow.html">施工の流れ</a></li>
-            <li><a href="./salesarea.html">営業エリア</a></li>
-            <li><a href="./faq.html">Q&A</a></li>
-            <li><a href="./contact.html">お問い合わせ</a></li>
-          </ul>
+        <ul class="flex footer-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">会社案内</a></li>
+          <li><a href="plan.html">施工プラン</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="repaint.html">塗り替え時期</a></li>
+          <li><a href="flow.html">施工の流れ</a></li>
+          <li><a href="salesarea.html">営業エリア</a></li>
+          <li><a href="faq.html">Q&A</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        <div class="copy">
+          <a href="" class="policy">プライバシーポリシー</a>
+          <small class="copyright"
+            >Copyright © 株式会社小出塗装 All Rights Reserved.<br
+              class="mobile"
+            />
+            【掲載の記事・写真・イラストなどの無断複写・転載を禁じます】</small
+          >
         </div>
       </div>
     </footer>
