@@ -1084,3 +1084,14 @@ p {
     right: -33px;
   }
 }
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s linear;
+}
+
+.fadeIn.start {
+  opacity: 1;
+  transform: translateY(0);
+}
