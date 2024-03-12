@@ -19,8 +19,8 @@ body {
   min-width: 1000px; /* 420px~1000pxでは横スクロールが出る対応です。　*/
   color: #212121;
   background-image: url(../img/body_bg.jpg);
-  background-position: center center;
-  background-size: contain;
+  background-position: top left;
+  background-size: 100%;
   background-repeat: repeat;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
@@ -78,11 +78,13 @@ img {
 }
 
 .inline-red {
+  font-weight: 500;
   color: #dc4a4a;
 }
 
 .inline-underline {
   text-decoration: underline;
+  font-weight: 500;
 }
 
 /* SPのみで表示する場合の汎用クラス */
@@ -137,10 +139,6 @@ img {
   position: relative;
   margin: 0 auto;
   text-align: center;
-}
-
-.section-title.color-b {
-  color: #353f66;
 }
 
 .section-title span {

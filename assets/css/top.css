@@ -164,7 +164,7 @@ p {
 
 @media (max-width: 420px) {
   .future {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
 
   .future .section-title {
@@ -184,6 +184,10 @@ p {
     gap: 0;
     flex-direction: column-reverse;
   }
+  .future__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   .future__list-item figure {
     width: 100%;
   }
@@ -196,9 +200,8 @@ p {
   .future__list-item:nth-child(2) figure img {
     padding-left: 5%;
   }
-
   .future__list-item .textarea {
-    padding: 0 5%;
+    width: 90%;
   }
 
   .future__list-item .textarea h3 {
@@ -302,9 +305,8 @@ p {
   }
 
   .repaint-content {
-    gap: 0;
-    width: 100%;
-    margin-top: -20px;
+    gap: 30px;
+    margin-top: 0;
     flex-direction: column;
   }
 
@@ -388,8 +390,12 @@ p {
   width: 50%;
 }
 
-.plan-contents img {
+.plan-contents figure {
   width: 50%;
+}
+
+.plan-contents figure img {
+  width: 100%;
 }
 
 .plan-contents-textarea .detail-btn {
@@ -405,13 +411,21 @@ p {
     margin-bottom: 50px;
   }
 
+  .plan .section-title span {
+    transform: translate(-10%, -100%) rotate(-10deg);
+  }
+
   .plan-contents {
     flex-direction: column-reverse;
   }
 
+  .plan-contents figure {
+    width: 100%;
+  }
+
   .plan-contents img {
     width: 100%;
-    padding-right: 10%;
+    padding-right: 5%;
   }
 
   .plan-contents-textarea {
@@ -522,7 +536,7 @@ p {
   justify-content: flex-start;
   align-items: stretch;
   gap: 15px;
-  width: 40%;
+  width: fit-content;
   font-size: 3.2rem;
   font-weight: 700;
 }
