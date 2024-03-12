@@ -359,6 +359,7 @@ footer::before {
 
 .footer-box {
   justify-content: space-between;
+  align-items: flex-start;
   background-color: #353f66;
   padding: 50px 0 10px;
 }
