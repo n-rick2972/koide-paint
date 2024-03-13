@@ -952,7 +952,7 @@ p {
   margin-right: 10px;
 }
 
-.contact-box .number {
+.contact-box .number a {
   font-size: 3.2rem;
   font-weight: 700;
   margin-left: 10px;
