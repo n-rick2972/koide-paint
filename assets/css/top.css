@@ -306,8 +306,9 @@ p {
 
   .repaint-content {
     gap: 30px;
-    margin-top: 0;
+    margin: 0 auto;
     flex-direction: column;
+    width: 90%;
   }
 
   .repaint-content .photo-area {
@@ -316,33 +317,27 @@ p {
   }
 
   .repaint-content .photo-area img:first-child {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 250px;
-    height: 250px;
+    top: 20px;
+    width: 70%;
+    height: auto;
   }
 
   .repaint-content .photo-area img:nth-last-of-type(2) {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 160px;
-    left: 200px;
+    width: 50%;
+    height: auto;
+    left: auto;
+    right: 0;
   }
 
   .repaint-content .photo-area img:nth-of-type(3) {
     width: 80px;
     height: 140px;
-    object-fit: cover;
-    position: absolute;
-    top: 200px;
-    left: 120px;
+    bottom: 30px;
+    left: 80px;
   }
 
   .repaint-content .text-area {
     width: 100%;
-    padding: 0 5%;
   }
 
   .repaint-content .text-area p {
